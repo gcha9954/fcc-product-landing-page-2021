@@ -5,23 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Static Template</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/822c5a0ed3.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header id="header">
-      <img src="#" alt="Company logo" id="header-img" />
+      <img src="https://picsum.photos/50" alt="Company logo" id="header-img" />
       <nav id="nav-bar">
-        <ul>
-          <li class="nav-link"><a href="#">element1</a></li>
-          <li class="nav-link"><a href="#">element2</a></li>
-          <li class="nav-link"><a href="#">element3</a></li>
-        </ul>
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#video-container">Demo</a>
+        <a class="nav-link" href="#form-container">Signup</a>
       </nav>
     </header>
     <main>
+      <div id="features">
+        <h2>Features</h2>
+        <div id="feature-list">
+          <div id="feature-list-item">
+            <i class="fas fa-thumbs-up fa-3x"></i>
+            <p>This product is superior to similar products by competitors.</p>
+          </div>
+          <div id="feature-list-item">
+            <i class="fas fa-money-bill-wave fa-3x"></i>
+            <p>
+              This product is less expensive than similar products by
+              competitors.
+            </p>
+          </div>
+          <div id="feature-list-item">
+            <i class="fas fa-recycle fa-3x"></i>
+            <p>
+              This product is more eco-friendly than similar products by
+              competitors.
+            </p>
+          </div>
+        </div>
+      </div>
       <div id="video-container">
+        <h2>Demo</h2>
         <video id="video" src="#" controls></video>
       </div>
       <div id="form-container">
+        <h2>Newsletter signup</h2>
         <form action="https://www.freecodecamp.com/email-submit" id="form">
           <p>Sign up for our newsletter</p>
           <label for="email">Email: </label>
